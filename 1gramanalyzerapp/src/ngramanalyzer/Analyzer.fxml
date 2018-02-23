@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="424.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ngramanalyzer.AnalyzerController">
+   <children>
+      <SplitPane dividerPositions="0.3940774487471526" layoutX="74.0" layoutY="29.0" orientation="VERTICAL" prefHeight="441.0" prefWidth="639.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="8.0" layoutY="24.0" text="Select Folder" />
+                  <TextField fx:id="txtTargetFolder" editable="false" layoutX="101.0" layoutY="19.0" prefHeight="25.0" prefWidth="274.0" promptText="target folder path" AnchorPane.leftAnchor="101.0" AnchorPane.rightAnchor="126.0" AnchorPane.topAnchor="19.0" />
+                  <Button fx:id="btnSelectFolder" defaultButton="true" layoutX="361.0" layoutY="19.0" mnemonicParsing="false" onAction="#chooseFolder" prefHeight="25.0" prefWidth="113.0" text="Select Folder" AnchorPane.rightAnchor="5.0" />
+                  <Label layoutX="9.0" layoutY="58.0" text="Enter Frequency Threshold :" />
+                  <TextField fx:id="txtFreqThreshold" layoutX="205.0" layoutY="54.0" text="100000" />
+                  <Button fx:id="btnGenerateWordList" layoutX="65.0" layoutY="123.0" mnemonicParsing="false" onAction="#generateWordList" text="Generate Word List" />
+                  <Button fx:id="btnOpenResult" disable="true" layoutX="274.0" layoutY="123.0" mnemonicParsing="false" onAction="#openResult" text="Open Result" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TextArea fx:id="txtConsole" editable="false" layoutX="189.0" layoutY="35.0" prefHeight="217.0" prefWidth="576.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="35.0" />
+                  <Button fx:id="btnCopyConsole" layoutX="378.0" layoutY="6.0" mnemonicParsing="false" onAction="#copyConsole" text="Copy" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="5.0" />
+                  <Button fx:id="btnClearConsole" layoutX="438.0" layoutY="6.0" mnemonicParsing="false" onAction="#clearConsole" text="Clear" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
