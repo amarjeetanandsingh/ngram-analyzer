@@ -1,16 +1,14 @@
 *.class
-
-
 *.log
-
-
 *.ctxt
-
-
-.mtj.tmp/
+.project
+.classpath
+.mtj
+.tmp/
 
 
 */.classpath
 */.project
 */.settings/*
 */bin/*
+/bin/
